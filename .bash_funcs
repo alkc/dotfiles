@@ -1,0 +1,5 @@
+fl() {
+    $file = "$(find . -type f | fzf)"
+    echo "less $@ ${file}"
+    less "$@" "$file"
+}
